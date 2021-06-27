@@ -1,6 +1,6 @@
 # etch-a-sketch
 
-Etch-A-Sketch project from The Odin Project (Fundamentals).
+Etch-A-Sketch project from The Odin Project (Foundations).
 
 Things I learnt from this project:
 
