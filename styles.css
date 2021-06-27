@@ -94,3 +94,8 @@ button{
     padding: 0.8rem 0.2rem;
     -webkit-transition-duration: 0.1s;
 }
+
+button:hover{
+    cursor:pointer;
+    background-color: rgba(236, 235, 235, 0.85);
+}
