@@ -12,3 +12,6 @@ Things I learnt from this project:
 - Prompt function in JS - used together with a do-while loop to validate input.
 - Using JS to iteratively generate a CSS grid (e.g for-loop, use index to set `gridColumnStart`)
 - Tried implementing a "Mobile-First" approach - designing the site for mobile and adding functionality (in this case - smaller grid percentage / flex layout to display buttons side by side) through min width media queries.
+- Toggleable buttons requires some exclusivity logic (check whether other button is active, deactivate if so)
+- `mouseenter` event - triggers when the mouse enters the element
+- Template Strings - similar to f-strings in python e.g. `` `text ${variable} text` ``
