@@ -1,0 +1,96 @@
+:root{
+    font-size: 10px;
+    font-family: sans-serif;
+}
+
+body{
+    font-size: 0.8rem;
+    background-color: khaki;
+}
+
+header{
+    text-align: center;
+    font-size: 5rem;
+    margin: 2rem;
+}
+
+/* #container{
+    display:flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+} */
+
+#container{
+    margin: auto;
+    display:grid;
+    grid-template-rows: repeat(16, 1fr);
+    width: 70%; 
+}
+
+@media only screen and (min-width: 800px){
+    #container{
+        width: 50%;
+    }
+    #button-container{
+        display: flex;
+        justify-content: center;
+    }
+    .button-div{
+        margin: 0 2rem;
+    }
+}
+
+@media only screen and (min-width: 1400px){
+    #container{
+        width: 35%;
+    }
+}
+
+.squares{
+    background-color: white;
+}
+
+.squares:first-child{
+    border-left: 1px solid;
+    border-right: 1px solid;
+}
+
+.squares:not(:first-child){
+    border-right: 1px solid;
+}
+
+.rows{
+    display:grid;
+    grid-template-rows: 1fr;
+
+}
+
+.rows:first-child > .squares{
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+
+.rows:not(:first-child) > .squares{
+    border-bottom: 1px solid;
+}
+
+.active{
+    box-shadow: 0px 0px 2px 2px blue;
+}
+
+#button-container{
+    margin: 5rem;
+}
+
+button{
+    width: 10rem;
+    margin: 2rem auto;
+    display:block;
+    font-size: 2rem;
+    border-radius: 1rem;
+    border-width: thin;
+    padding: 0.8rem 0.2rem;
+    -webkit-transition-duration: 0.1s;
+}
